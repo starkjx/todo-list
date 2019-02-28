@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://starkjx.github.io/todo-list/build",
   "dependencies": {
+    "leancloud-storage": "^3.11.1",
     "normalize.css": "^8.0.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
