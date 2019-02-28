@@ -17,7 +17,7 @@ class App extends Component {
     this.state.todoList.push({
       id: idMaker(),
       title: event.target.value,
-      status: null,
+      status: '',
       deleted: false
     })
     this.setState({
@@ -31,12 +31,23 @@ class App extends Component {
       todoList: this.state.todoList
     })
   }
+  toggle(event,todo){
+    todo.status = todo.status === 'completed' ? '' : 'completed'
+    this.setState(this.state)
+  }
+  delete(event,todo){
+    todo.deleted = true
+    this.setState(this.state)
+  }
   render(){
-    let todos = this.state.todoList.map((elem, index) => {
+    let todos = this.state.todoList
+      .filter((elem) => !elem.deleted)
+      .map((elem, index) => {
       //return <li>{todo.title}</li>
       return (
         <li key={index}>
-          <TodoItem todo={elem}/>
+          <TodoItem todo={elem} onToggle={this.toggle.bind(this)}
+            onDelete={this.delete.bind(this)}/>
         </li>
       )
     })
