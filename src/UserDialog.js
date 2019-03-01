@@ -27,6 +27,9 @@ export default class UserDialog extends Component{
         case 202:
           alert('用户名被占用')
           break;
+        case 125:
+          alert('邮箱错误，请输入正确的邮箱地址')
+          break;
         default:
           alert(error)
           break;

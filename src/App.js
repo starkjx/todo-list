@@ -67,9 +67,13 @@ class App extends Component {
     })
   };
   onSignUpOrSignIn(user){
-    let stateCopy = JSON.parse(JSON.stringify(this.state))
-    stateCopy.user = user
-    this.setState(stateCopy)
+    if(user.username.length > 6){
+      let stateCopy = JSON.parse(JSON.stringify(this.state))
+      stateCopy.user = user
+      this.setState(stateCopy)
+    }else{
+      alert('用户名和密码长度需大于6！')
+    }
     //console.log(stateCopy)
   }
   onsignOut(){
@@ -92,8 +96,10 @@ class App extends Component {
     return (
       <div className="App">
       <div className="HeadWrapper">
-        <h1>{this.state.user.username||'我'}的待办</h1>
-        {this.state.user.id ? <button onClick={this.onsignOut.bind(this)}>登出</button> : null}
+        <div className="Head">
+          <h1>{this.state.user.username||'我'}的待办</h1>
+          {this.state.user.id ? <button onClick={this.onsignOut.bind(this)}>登出</button> : null}
+        </div>
       </div>
         <div className="inputWrapper">
           <TodoInput content={this.state.newTodo}
