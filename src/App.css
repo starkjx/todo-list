@@ -1,18 +1,29 @@
 .App {
-  color: rgb(46, 44, 44);
-  border: 1px solid rgb(105, 95, 95);
-  border-radius: 5px;
+  color: #333;
+  border: 1px solid #aaa;
+  border-radius: 4px;
   background: white;
-  margin: 2em 10em;
-  padding: 0 4em;
+  margin: 2em;
+  padding: 0 1em;
   min-height: 20em;
   min-width: 32em;
-  box-shadow: 0 0 1em hsla(0,0%,0%,0.15);
+  box-shadow: 0 0 1em hsla(0, 0%, 0%, 0.15);
+}
+
+.App > .todoList> li:nth-child(even){
+  background: transparent;
 }
 
 .App > .todoList> li:nth-child(odd){
   background: #eee;
 }
-.App > .todoList> li:nth-child(even){
-  background: transparent;
+
+.App .HeadWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App .HeadWrapper>button{
+  margin-right: .5em;
 }

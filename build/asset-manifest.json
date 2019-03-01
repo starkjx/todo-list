@@ -1,15 +1,15 @@
 {
-  "main.css": "/todo-list/build/static/css/main.c09f29bd.chunk.css",
-  "main.js": "/todo-list/build/static/js/main.bd1d2b53.chunk.js",
-  "main.js.map": "/todo-list/build/static/js/main.bd1d2b53.chunk.js.map",
+  "main.css": "/todo-list/build/static/css/main.249d1432.chunk.css",
+  "main.js": "/todo-list/build/static/js/main.da40e252.chunk.js",
+  "main.js.map": "/todo-list/build/static/js/main.da40e252.chunk.js.map",
   "runtime~main.js": "/todo-list/build/static/js/runtime~main.90c11a34.js",
   "runtime~main.js.map": "/todo-list/build/static/js/runtime~main.90c11a34.js.map",
   "static/css/2.09307d7b.chunk.css": "/todo-list/build/static/css/2.09307d7b.chunk.css",
-  "static/js/2.3b06d3a9.chunk.js": "/todo-list/build/static/js/2.3b06d3a9.chunk.js",
-  "static/js/2.3b06d3a9.chunk.js.map": "/todo-list/build/static/js/2.3b06d3a9.chunk.js.map",
+  "static/js/2.f17048dd.chunk.js": "/todo-list/build/static/js/2.f17048dd.chunk.js",
+  "static/js/2.f17048dd.chunk.js.map": "/todo-list/build/static/js/2.f17048dd.chunk.js.map",
   "index.html": "/todo-list/build/index.html",
-  "precache-manifest.338484ad747a1cafe1dda3416fa6c56f.js": "/todo-list/build/precache-manifest.338484ad747a1cafe1dda3416fa6c56f.js",
+  "precache-manifest.3eaf70b0434ca31194a871c64bd740d3.js": "/todo-list/build/precache-manifest.3eaf70b0434ca31194a871c64bd740d3.js",
   "service-worker.js": "/todo-list/build/service-worker.js",
   "static/css/2.09307d7b.chunk.css.map": "/todo-list/build/static/css/2.09307d7b.chunk.css.map",
-  "static/css/main.c09f29bd.chunk.css.map": "/todo-list/build/static/css/main.c09f29bd.chunk.css.map"
+  "static/css/main.249d1432.chunk.css.map": "/todo-list/build/static/css/main.249d1432.chunk.css.map"
 }

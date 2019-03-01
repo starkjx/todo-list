@@ -1,50 +1,47 @@
+import React, {Component} from 'react';
 import SignUpForm from './SignUpForm';
 import SignInForm from './SignInForm';
-import React, {Component} from 'react';
 
-
-export default class signInOrSignUp extends Component{
+export default class SignInOrSignUp extends Component{
   constructor(props){
     super(props)
-    this.state ={
+    this.state = {
       selected: 'signUp'
     }
   }
   switch(e){
     this.setState({
-      selected : e.target.value
+      selected: e.target.value
     })
   }
   render(){
-    return(
+    return (
       <div className="signInOrSignUp">
-        <nav>
-          <label>
-            <input type="radio" value="signUp" 
-              checked={this.state.selected === 'signUp'}
-              onChange={this.switch.bind(this)}
-            />注册
-          </label>
-          <label>
-            <input type="radio" value="signIn"
-              checked={this.state.selected === 'signIn'}
-              onChange={this.switch.bind(this)}
-            />登录
-          </label>
-        </nav>
-        <div className="panes">
-          {this.state.selected === 'signUp' ? 
+         <nav>
+            <label>
+              <input type="radio" value="signUp"
+                     checked={this.state.selected === 'signUp'}
+                     onChange={this.switch.bind(this)}
+            />注册</label>
+            <label>
+              <input type="radio" value="signIn"
+                     checked={this.state.selected === 'signIn'}
+                     onChange={this.switch.bind(this)}
+            />登录</label>
+          </nav>
+          <div className="panes">
+          {this.state.selected === 'signUp' ?
             <SignUpForm formData={this.props.formData}
-              onChange={this.props.onChange}
-              onSubmit={this.props.onSignUp}/>
+                        onSubmit={this.props.onSignUp}
+                        onChange={this.props.onChange}/>
             : null}
           {this.state.selected === 'signIn' ?
             <SignInForm formData={this.props.formData}
-              onChange={this.props.onChange}
-              onSubmit={this.props.onSignIn}
-              onForgotPassword={this.props.onForgotPassword}/>
+                        onSubmit={this.props.onSignIn}
+                        onChange={this.props.onChange}
+                        onForgotPassword={this.props.onForgotPassword}/>
             : null}
-        </div>
+          </div>
       </div>
     )
   }
